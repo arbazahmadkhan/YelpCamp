@@ -45,7 +45,8 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-mongoose.connect("mongodb://localhost/Yelp_Camp_V8");
+// mongoose.connect("mongodb://localhost/Yelp_Camp_V8");
+mongoose.connect("mongodb://arbaz:password00@ds157493.mlab.com:57493/yelpcamp");
 
 
 app.use(indexRoutes);
